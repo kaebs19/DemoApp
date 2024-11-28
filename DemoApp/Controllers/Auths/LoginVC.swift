@@ -25,8 +25,11 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginBtnTapped(_ sender: Any) {
-        navigateToController(identifier: .TAB_BARS, storyboardName: .TabBar)
-        print("Did tap login button")
+       // navigateToController(identifier: .TAB_BARS, storyboardName: .TabBar)
+        
+        if falidateLoginFileds() {
+
+        }
     }
 
     @IBAction func registerBtnTapped(_ sender: Any) {
@@ -52,5 +55,15 @@ extension LoginVC {
             button?.addRadusWithBoder(text: "", raduis: 7, bordercolor: .C0079FB_blue, Width: 1)
             
         }
+    }
+    
+    func falidateLoginFileds() -> Bool {
+        
+        if emailTF.text == "" || passwordTF.text == "" {
+            print("Email or Password is Empty")
+            return false
+        }
+        
+        return true
     }
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesCVCellHome" customModule="DemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-m2-tVc">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="197"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_1" translatesAutoresizingMaskIntoConstraints="NO" id="CeK-5P-Zku">
+                                <rect key="frame" x="0.0" y="0.0" width="286" height="197"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="categories_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="b9z-ha-T7t">
+                                <rect key="frame" x="0.0" y="0.0" width="286" height="197"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetic Supplies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-Aa-8sr">
+                                <rect key="frame" x="76.666666666666686" y="88" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="#F1EFF1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CeK-5P-Zku" firstAttribute="leading" secondItem="bSk-m2-tVc" secondAttribute="leading" id="8F9-Mn-tPE"/>
+                            <constraint firstItem="b9z-ha-T7t" firstAttribute="top" secondItem="bSk-m2-tVc" secondAttribute="top" id="IAp-CE-zos"/>
+                            <constraint firstAttribute="trailing" secondItem="b9z-ha-T7t" secondAttribute="trailing" id="KZ1-Hs-zEJ"/>
+                            <constraint firstAttribute="bottom" secondItem="b9z-ha-T7t" secondAttribute="bottom" id="MwP-Z2-xdK"/>
+                            <constraint firstItem="b9z-ha-T7t" firstAttribute="leading" secondItem="bSk-m2-tVc" secondAttribute="leading" id="QtS-XH-MRJ"/>
+                            <constraint firstItem="CeK-5P-Zku" firstAttribute="top" secondItem="bSk-m2-tVc" secondAttribute="top" id="c7J-tp-A5C"/>
+                            <constraint firstAttribute="bottom" secondItem="CeK-5P-Zku" secondAttribute="bottom" id="inr-30-fPd"/>
+                            <constraint firstItem="2z1-Aa-8sr" firstAttribute="centerX" secondItem="bSk-m2-tVc" secondAttribute="centerX" id="pCM-HE-KRt"/>
+                            <constraint firstItem="2z1-Aa-8sr" firstAttribute="centerY" secondItem="bSk-m2-tVc" secondAttribute="centerY" id="uic-Vl-Erc"/>
+                            <constraint firstAttribute="trailing" secondItem="CeK-5P-Zku" secondAttribute="trailing" id="xQi-A1-cHm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bSk-m2-tVc" secondAttribute="trailing" id="0gc-CF-6a2"/>
+                <constraint firstItem="bSk-m2-tVc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3MP-CD-TUy"/>
+                <constraint firstItem="bSk-m2-tVc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="62J-69-LOU"/>
+                <constraint firstAttribute="bottom" secondItem="bSk-m2-tVc" secondAttribute="bottom" id="Cwq-db-APZ"/>
+            </constraints>
+            <size key="customSize" width="286" height="197"/>
+            <connections>
+                <outlet property="mainView" destination="bSk-m2-tVc" id="K3B-b6-eOB"/>
+            </connections>
+            <point key="canvasLocation" x="80.916030534351137" y="72.183098591549296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="categories_shadow" width="204" height="142.66667175292969"/>
+        <image name="product_1" width="80" height="80"/>
+        <namedColor name="#F1EFF1">
+            <color red="0.94499999284744263" green="0.93699997663497925" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

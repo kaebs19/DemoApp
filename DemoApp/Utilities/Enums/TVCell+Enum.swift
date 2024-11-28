@@ -13,4 +13,8 @@ enum TVCell: String {
     case AddressesTvCell = "AddressesTvCell"
     case CartTVCell = "CartTVCell"
     case ProductsTVCell = "ProductsTVCell"
+    
+    var identifier: String {
+        return rawValue
+    }
 }

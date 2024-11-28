@@ -9,5 +9,14 @@ import Foundation
 
 
 enum CVCellEnum: String {
-    case  CategoriesCVCell = "CategoriesCVCell"
+    case  ProductsCVCell = "ProductsCVCell"
+    case CategoryCVCell =  "CategoryCVCell"
+    case CategoriesCVCellHome = "CategoriesCVCellHome"
+    case ProductsCVCellHome = "ProductsCVCellHome"
+    case SliderCVCellHome = "SliderCVCellHome"
+    
+    var identifier: String {
+        return self.rawValue
+    }
+
 }
